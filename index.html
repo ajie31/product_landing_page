@@ -2,11 +2,153 @@
 <html lang="en" dir="ltr">
     <head>
         <meta charset="utf-8">
-        <title></title>
+        <title>Product Landing Demo</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="style/style.css">
     </head>
     <body>
         <header id="header">
+            <nav id="nav-bar">
+                <a class="nav-link link-overview" href="#overview">Overview</a>
+                <a class="nav-link link-feature" href="#feature">Feature</a>
+                <a class="nav-link link" href="#spec">Technical Spec</a>
+            </nav>
+            <img id="header-img" src="https://1000logos.net/wp-content/uploads/2020/04/Sennheiser-Logo.png" alt="Company Logo">
 
         </header>
+        <div id="overview" class="videoOverView">
+            <div class="product-stage">
+                <h2 class="product-title">MOMENTUM True Wireless 2</h2>
+                <p class="product-description">
+                    For the past 75 years, Sennheiser has put sound first.
+                    The new MOMENTUM True Wireless 2 is no different.
+                    Thanks to leading audio technology and innovation,
+                    these new earbuds deliver the best listening experience
+                    anytime, anywhere. With improved ergonomics designed
+                    for full day wearing and refined touch controls
+                    for a more personalised experience, they have been
+                    finely crafted for the most discerning listener and
+                    aim to simplify your life by enhancing your everyday.
+                </p>
+            </div>
+
+            <video id="video" autoplay muted src="video/sennheiserVid.mp4" type="video/mp4"> </video>
+        </div>
+
+        <div id="feature" class="feature-section">
+            <div class="feature1">
+
+            </div>
+            <div class="content-feature1">
+                <section class="feature-section">
+                    <h2>Features 1</h2>
+                </section>
+                <section class="feature-section">
+                    <h4>IPX4 rated</h4>
+                    <p>Enjoy outstanding audio experience no matter where you
+                         are with IPX4 splash resistant design.</p>
+                </section>
+                <section class="feature-section">
+                    <h4>Craftmenship</h4>
+                    <p>Exquisite craftsmanship, with a beautiful design now available in an all
+                         new white and grey color scheme as well as classic black.</p>
+                </section>
+                <section class="feature-section">
+                    <h4>Up to 28 hours play time</h4>
+                    <p>Experience uninterrupted play time with the new
+                        7-hour battery life that can be extended up to 28 hours
+                        with the charging case.</p>
+                </section>
+
+            </div>
+            <div class="feature2">
+
+            </div>
+            <div class="content-feature2">
+                <section class="feature-section">
+                    <h2>Features 2</h2>
+                </section>
+                <section class="feature-section">
+                    <h4>IPX4 rated</h4>
+                    <p>Enjoy outstanding audio experience no matter where you
+                         are with IPX4 splash resistant design.</p>
+                </section>
+                <section class="feature-section">
+                    <h4>Craftmenship</h4>
+                    <p>Exquisite craftsmanship, with a beautiful design now available in an all
+                         new white and grey color scheme as well as classic black.</p>
+                </section>
+                <section class="feature-section">
+                    <h4>Up to 28 hours play time</h4>
+                    <p>Experience uninterrupted play time with the new
+                        7-hour battery life that can be extended up to 28 hours
+                        with the charging case.</p>
+                </section>
+            </div>
+        </div>
+
+        <div id="spec" class="technical-spec">
+            <h2>Technical Specifications</h2>
+            <ul>
+                <li>
+                    <dl class="spec-list">
+                        <dt>Dimension</dt>
+                        <dd>76.8 x 43.8 x 34.7 mm (earbuds and charging case)</dd>
+                    </dl>
+                </li>
+                <li>
+                    <dl class="spec-list">
+                        <dt>USB Standard</dt>
+                        <dd>USB-C</dd>
+                    </dl>
+                </li>
+                <li>
+                    <dl class="spec-list">
+                        <dt>Power supply</dt>
+                        <dd>5 V⎓ 650 mA max</dd>
+                    </dl>
+                </li>
+                <li>
+                    <dl class="spec-list">
+                        <dt>Speaker type</dt>
+                        <dd>76.8 x 43.8 x 34.7 mm (earbuds and charging case)</dd>
+                    </dl>
+                </li>
+                <li>
+                    <dl class="spec-list">
+                        <dt>Frequency response (Microphone)</dt>
+                        <dd>76.8 x 43.8 x 34.7 mm (earbuds and charging case)</dd>
+                    </dl>
+                </li>
+                <li>
+                    <dl class="spec-list">
+                        <dt>Frequency response</dt>
+                        <dd>76.8 x 43.8 x 34.7 mm (earbuds and charging case)</dd>
+                    </dl>
+                </li>
+                <li>
+                    <dl class="spec-list">
+                        <dt>Noise cancellation</dt>
+                        <dd>76.8 x 43.8 x 34.7 mm (earbuds and charging case)</dd>
+                    </dl>
+                </li>
+            </ul>
+        </div>
+        <div id="newsletter" >
+            <h2 class="newsletter-title">NEWSLETTER</h2>
+            <p>Iusto odio dignissimos ducimus, qui dolorem. Nihil impedit,
+                quo voluptas assumenda est, qui ratione voluptatem sequi aboriosam,
+                 nisi ut perspiciatis nesciunt neque.
+            </p>
+            <form id="form" action="https://www.freecodecamp.com/email-submit" method="post">
+                <input id="email" type="email" name="email" placeholder="Enter Your Email" value="">
+                <input type="submit" id="submit" >
+            </form>
+        </div>
+
     </body>
+    <script type="text/javascript" src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js">
+
+    </script>
 </html>

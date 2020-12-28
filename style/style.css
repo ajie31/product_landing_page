@@ -1,0 +1,276 @@
+:root{
+    font-family:"Montserrat";
+     text-rendering: optimizeLegibility;
+     -webkit-font-smoothing: antialiased;
+     -moz-osx-font-smoothing: grayscale;
+     scroll-behavior: smooth;
+}
+body{
+    padding-top:3rem;
+    max-width:100%;
+    min-width:360px;
+    height:auto;
+    overflow-x: hidden;
+    display:flex;
+    flex-direction: column;
+    margin:0;
+}
+h4{
+    margin-bottom:-12px;
+}
+
+li{
+    list-style-type:none;
+    padding:10px 5rem;
+    border-top: 1px solid #e8e8e8;
+
+}
+dl{
+    display:inline-flex;
+    width:100%;
+    justify-content:space-between;
+
+}
+header {
+    display:flex;
+    flex-wrap:wrap;
+    justify-content: center;
+    width:100%;
+    position:fixed;
+    z-index:16;
+    top:0;
+    left:0;
+    min-height: 3rem;
+    background: #fff;
+    box-shadow: 0 2px 30px rgba(0, 0, 0, 0.3);
+}
+header > img {
+    order:0;
+    width:7rem;
+    margin: 0 auto 0 5rem;
+    margin-right: auto;
+}
+nav{
+    order:1;
+    align-self: center;
+    margin: 0 5rem 0 auto;
+    flex-basis: 30rem;
+    display:flex;
+    justify-content:space-between;
+
+}
+nav > a{
+    text-decoration: none;
+    color:#414141;
+    font-weight: 600;
+    font-size: 1rem;
+
+}
+
+#overview{
+    height:auto;
+
+}
+
+#overview > .product-stage{
+    position:absolute;
+    max-width:500px;
+    top:430px;
+    left:5rem;
+    z-index: 1;
+}
+#overview > .product-stage > p{
+    font-size: 1rem;
+    font-weight:400;
+}
+video{
+    position:relative;
+    /* max-width: 160%; */
+    min-width: 100%;
+}
+
+
+#feature{
+    height:1600px;
+}
+#feature > .feature1{
+    width:100%;
+    height:50%;
+    background:url("../img/momentum-feature-1.jpg") no-repeat  center;
+    background-size:auto 120%;
+    background-position:60% center;
+    position:relative;
+}
+#feature > .feature2{
+    width:100%;
+    height:50%;
+    background: grey;
+    background:url("../img/momentum-feature-2.jpg") no-repeat center;
+    background-size:auto 120%;
+    background-position:35% center;
+    position:relative;
+}
+.content-feature1{
+    max-width: 30rem;
+    position: absolute;
+    top:1350px;
+    right:5rem;
+}
+.feature-section{
+    margin-bottom: 20px;
+}
+.content-feature2{
+    max-width: 30rem;
+    position: absolute;
+    top:2200px;
+    left:5rem;
+    color:#fff;
+}
+
+#spec{
+    width:100%;
+
+}
+#spec > h2{
+    margin-left: 5rem;
+}
+#spec > ul{
+    padding: 0;
+}
+
+#newsletter{
+    padding:4rem 0;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:center;
+    background-color: #eee;
+}
+#newsletter > p{
+    width:70%;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+form{
+    width:40%;
+    display:flex;
+    justify-content: center;
+
+}
+input[type=email]{
+    width:75%;
+    height:20px;
+    padding:14px 1rem;
+    font-size: 1.1rem;
+    outline: none;
+    border-radius: 5px 0 0 5px;
+    border:2px solid #414141;
+    border-right: none;
+
+}
+input[type=submit]{
+    width:10rem;
+    font-size:100%;
+    outline: none;
+    border-radius: 0 5px 5px 0;
+    border:2px solid #414141;
+    border-left: none;
+    color:#fff;
+    background-color:#414141;
+    cursor: pointer;
+}
+
+@media (max-width:1200px) {
+    video{
+        width:1400px;
+    }
+    .content-feature1{
+        top: 1000px;
+    }
+    .content-feature2{
+        top: 1850px;
+    }
+}
+
+@media (max-width:768px) {
+    header{
+        flex-direction: column;
+        height:auto;
+    }
+    header > #nav-bar{
+        display: none;
+    }
+    header > img{
+        margin:auto;
+    }
+
+    #overview{
+        margin: 5rem 0 1.2em 0;
+        display:flex;
+        flex-direction: column-reverse;
+    }
+    #overview>video{
+        position:static;
+        width:100%;
+    }
+    #overview > .product-stage{
+        position:static;
+        max-width:90%;
+        margin : 1.2em auto 0 auto;
+    }
+
+    #feature{
+        height:auto;
+        position:static;
+
+    }
+    #feature > .feature1 ,#feature > .feature2{
+
+        height: 300px;
+
+    }
+    .content-feature1{
+        position:static;
+        margin:1.2em auto;
+        max-width:90%;
+    }
+    .content-feature2{
+        position:static;
+        color: black;
+        margin:1.2em auto;
+        max-width:90%;
+    }
+    #spec > h2{
+        margin-left:auto;
+        max-width:95%;
+    }
+    li{
+        list-style-type:none;
+        padding:10px 0;
+        border-top: 1px solid #e8e8e8;
+
+    }
+    ul{
+        margin:0 auto;
+        max-width:90%;
+    }
+    dl{
+        display:flex;
+        flex-direction:column;
+        justify-content: flex-start;
+    }
+    dd{
+        margin:10px 0;
+        font-size: 13px;
+    }
+
+    #newsletter > p {
+        width:90%;
+        margin:0 auto;
+    }
+
+    #newsletter > form{
+        width:90%;
+        margin:2rem auto;
+    }
+}
